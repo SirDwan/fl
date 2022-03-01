@@ -60,7 +60,20 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  #assets:
+  assets:
+    - web/slut0.jpeg
+    - web/slut1.jpeg
+    - web/slut2.jpeg
+    - web/slut3.jpeg
+    - web/slut4.jpeg
+    - web/slut5.jpeg
+    - web/slut6.jpeg
+    - web/slut7.jpeg
+    - web/slut8.jpeg
+    - web/slut9.jpeg
+    - web/slut10.jpeg
+    - web/slut11.jpeg
+
 
 
 

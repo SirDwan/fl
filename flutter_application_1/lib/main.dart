@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.cyan,
-          title: Text(
+          title: const Text(
             'Best Sluts Ever',
           )
           ),
-        body: Gallery(),
+        body: const Gallery(),
       )
     );
   }
