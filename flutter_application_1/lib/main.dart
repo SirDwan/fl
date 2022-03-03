@@ -1,55 +1,25 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(SimpleWidget());
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class ScreenWidget extends StatelessWidget {
+  const ScreenWidget({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.cyan,
-          title: const Text(
-            'Best Sluts Ever',
-          )
-          ),
-        body: const Gallery(),
-      )
+        appBar: AppBar(title: Text("Best sluts ever")),
+        )
     );
   }
 }
+class SimpleWidget extends StatelessWidget {
+  const SimpleWidget({ Key? key }) : super(key: key);
 
-class Gallery extends StatefulWidget {
-  const Gallery({ Key? key }) : super(key: key);
-
-  @override
-  _GalleryState createState() => _GalleryState();
-}
-
-class _GalleryState extends State<Gallery> {
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      padding:const EdgeInsets.all(2.0),
-          
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        childAspectRatio: 0.7,
-        mainAxisSpacing: 2.0,
-        crossAxisSpacing: 2.0,
-        crossAxisCount: 1,
-        ), 
-      
-      itemBuilder: (context, index){
-        return Image.asset(
-          'web/slut$index.jpeg',
-          fit: BoxFit.cover
-          );
-      },
-      itemCount: 12,
-      );
+    return Container(child: Center(child: Text('S',textDirection: TextDirection.ltr,)));
   }
 }
+
